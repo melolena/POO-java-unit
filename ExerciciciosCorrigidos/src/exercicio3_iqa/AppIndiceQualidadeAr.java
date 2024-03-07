@@ -11,16 +11,16 @@ public class AppIndiceQualidadeAr {
 		//2.2
 		System.out.println("Digite o índice");
 		double indice = s.nextDouble();
-		iqa.indice = indice;
+		iqa.setIndice(indice);
 		
 		//2.3
 		iqa.defineClassificacao();
 		iqa.defineEfeitos();
 		
 		//2.4
-		System.out.println(iqa.indice);
-		System.out.println(iqa.classificacao);
-		System.out.println(iqa.efeitos);
+		System.out.println(iqa.getIndice());
+		System.out.println(iqa.getClassificacao());
+		System.out.println(iqa.getEfeitos());
 		
 		//2.5
 		System.out.println("Digite o Índice de Qualidade do Ar (IQA) anterior:");

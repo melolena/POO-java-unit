@@ -1,10 +1,26 @@
 package exercicio3_iqa;
 
 public class IndiceQualidadeAr {
-	double indice;
-	String classificacao;
-	String efeitos;
+	private double indice;
+	private String classificacao;
+	private String efeitos;
 	
+	public void setIndice(double indice) {
+		this.indice = indice; //o this sinaliza que é um parâmetro de uma variável local 
+	}
+	
+	public double getIndice() {
+		return indice;
+	}
+	
+	public  String getClassificacao() {
+		return classificacao;
+	}
+	
+	public String getEfeitos() {
+		return efeitos;
+	}
+
 	void defineClassificacao() {
 		if(indice <= 50) {
 			classificacao = "Boa";
@@ -25,6 +41,7 @@ public class IndiceQualidadeAr {
 			classificacao = "Crítica";
 		}
 	}
+	
 	
 	void defineEfeitos() {
 		if(indice <= 100) {
