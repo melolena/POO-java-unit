@@ -68,20 +68,24 @@ public class ContaBancaria {
 	            saldo -= valor;
 	            System.out.printf("\nSaque realizado no valor de R$ %.2f. Saldo atual: R$ %.2f", valor, saldo);
 	            return true;
-	        } else {
+	        } 
+	        else {
 	            System.out.printf("\nSaldo insuficiente. Saldo atual: R$ %.2f", saldo);
 	            return false;
 	        }
-	    } else if (tipo.equals("N")) {
+	    } 
+		else if (tipo.equals("N")) {
 	        if ((saldo - valor) >= 0) {
 	            saldo -= valor;
 	            System.out.printf("\nSaque realizado no valor de R$ %.2f. Saldo atual: R$ %.2f", valor, saldo);
 	            return true;
-	        } else {
+	        } 
+	        else {
 	            System.out.printf("\nSaldo insuficiente. Saldo atual: R$ %.2f", saldo);
 	            return false;
 	        }
-	    } else {
+	    }
+		else {
 	        System.out.println("Tipo de conta inválido.");
 	        return false;
 	    }
