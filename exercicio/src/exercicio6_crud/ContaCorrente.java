@@ -1,11 +1,12 @@
-package exercicio4_encapsulamento;
+package exercicio6_crud;
+
+
 
 public class ContaCorrente {
 
 	public static void main(String[] args) {
-		
 		ContaBancaria cb = new ContaBancaria();
-		CriarExibirContarCorrente ce = new CriarExibirContarCorrente();
+		CriarExibirConta ce = new CriarExibirConta();
 		
 		//2.1
 		
@@ -54,8 +55,7 @@ public class ContaCorrente {
 		cb.registraSaque(2000);
 		cb.registraSaque(3000);
 		
-		
 
 	}
-	
+
 }

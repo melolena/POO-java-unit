@@ -59,7 +59,7 @@ public class ContaBancaria {
 	
 	void registraDeposito(double valor) {
 		saldo += valor;
-		System.out.printf("\n Depósito realizado no valor de: R$ %.2f", valor);
+		System.out.printf("\n Depósito realizado no valor de: R$ %.2f. Saldo atual: R$ %.2f", valor, saldo);
 	}
 	
 	boolean registraSaque(double valor) {
