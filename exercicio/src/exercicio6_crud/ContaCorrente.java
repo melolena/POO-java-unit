@@ -5,15 +5,20 @@ package exercicio6_crud;
 public class ContaCorrente {
 
 	public static void main(String[] args) {
-		ContaBancaria cb = new ContaBancaria();
-		CriarExibirConta ce = new CriarExibirConta();
+		ContaBancaria cb = new ContaBancaria(2344, "Boa Viagem", "22348-0", "E");
 		
 		//2.1
+
+    	System.out.printf("\nID.................: %s ", cb.getIdConta());
+    	System.out.printf("\nAgência............: %s ", cb.getAgencia());
+    	System.out.printf("\nNúmero da conta....: %s ", cb.getNumeroConta());
+    	System.out.printf("\nTipo de conta......: %s ", cb.getTipo());
+    	System.out.printf("\nSaldo...............: R$ %s ", cb.getSaldo());
+    	System.out.printf("\nLimite de Crédito...: R$ %s ", cb.getLimiteCredito());
 		
-		ce.criarContaCorrente(cb, 0001, "Parnamirim", "00000004-2", "E", 0, 2000);
 		
 		//2.2
-		ce.mostrarDados(cb);
+		
 		
 		System.out.println();
 		
@@ -31,30 +36,6 @@ public class ContaCorrente {
 		cb.registraSaque(800);
 		
 		System.out.println();
-		
-		//3.1
-		
-		ce.criarContaCorrente(cb, 0002, "Aflitos", "00000005-7", "N", 0, 0);
-		
-		//3.2
-		
-	
-		ce.mostrarDados(cb);
-		
-		System.out.println();
-		
-		//3.2
-		System.out.println("\n Área de depósito");
-		cb.registraDeposito(1000);
-		cb.registraDeposito(2000);
-		
-		System.out.println();
-		
-		//3.3
-		System.out.println("\n Área de saque");
-		cb.registraSaque(2000);
-		cb.registraSaque(3000);
-		
 
 	}
 
