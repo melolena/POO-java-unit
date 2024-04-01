@@ -1,8 +1,9 @@
-package aula07.lista;
+package exercicio5_embarcaco;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-import aula06.Embarcacao;
+
+import exercicio5_embarcaco.Embarcacao;
 
 public class AppEmbarcacaoLista {
 	
