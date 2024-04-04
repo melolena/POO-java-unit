@@ -12,6 +12,8 @@ public class AppEsferaEstruturado {
 		
 		System.out.printf("\nÁrea  : %10.1f",  calcularArea(r));
 		System.out.printf("\nVolume: %10.1f " , calcularVolume(r));
+		
+		s.close();
 
 	}
 	
@@ -26,3 +28,4 @@ public class AppEsferaEstruturado {
 	}
 
 }
+//substring
