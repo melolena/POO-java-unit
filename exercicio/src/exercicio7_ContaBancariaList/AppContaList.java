@@ -83,8 +83,12 @@ public class AppContaList {
     	System.out.println("Digite o tipo da conta: \n");           
 
         String tipo = s.nextLine();
+                
+        System.out.println("Digite o limite de crédito: \n");
         
-        ContaBancaria conta = new ContaBancaria(idConta, agencia, numeroConta, tipo);
+        double limiteCredito = s.nextDouble();
+        
+        ContaBancaria conta = new ContaBancaria(idConta, agencia, numeroConta, tipo, limiteCredito);
         contas.add(conta);
         
         System.out.println("\nCadastro efetuado\n");
@@ -141,7 +145,7 @@ public class AppContaList {
     	System.out.printf("\nSaldo...............: R$ %s ", contaEncontrada.getSaldo());
     	System.out.printf("\nLimite de Crédito...: R$ %s ", contaEncontrada.getLimiteCredito());
     	
-    	System.out.println("Nova agência: ");
+    	System.out.println("\n\nNova agência: ");
     	String novaAgencia = s.nextLine();	
     	contaEncontrada.setAgencia(novaAgencia);
     	System.out.println("Agência alterada!");
@@ -151,6 +155,14 @@ public class AppContaList {
     	String novoTipo = s.nextLine();
     	contaEncontrada.setTipo(novoTipo);
     	System.out.println("Tipo de conta alterado!");
+    	
+    	
+    	System.out.println("Novo limite de conta: ");
+    	Double novoLimite = s.nextDouble();
+    	contaEncontrada.setLimiteCredito(novoLimite);
+    	System.out.println("Tipo de conta alterado!");
+    	
+    	
     }
     
     public static void excluirConta() {
@@ -164,6 +176,8 @@ public class AppContaList {
     	
     	System.out.println("Digite o ID da conta:");
     	int idConta = s.nextInt();
+    	
+    	s.nextLine();
     	
     	ContaBancaria contaEncontrada = pesquisarContaCodigo(idConta);
     	

@@ -5,7 +5,7 @@ package exercicio6_crud;
 public class ContaCorrente {
 
 	public static void main(String[] args) {
-		ContaBancaria cb = new ContaBancaria(2344, "Boa Viagem", "22348-0", "E");
+		ContaBancaria cb = new ContaBancaria(2344, "Boa Viagem", "22348-0", "E", 2000);
 		
 		//2.1
 

@@ -11,9 +11,6 @@ public class ContaBancaria {
         return idConta;
     }
 
-    public void setIdConta(int idConta) {
-        this.idConta = idConta;
-    }
 
     public String getAgencia() {
         return agencia;
@@ -25,10 +22,6 @@ public class ContaBancaria {
 
     public String getNumeroConta() {
         return numeroConta;
-    }
-
-    public void setNumeroConta(String numeroConta) {
-        this.numeroConta = numeroConta;
     }
 
     public String getTipo() {
@@ -47,19 +40,18 @@ public class ContaBancaria {
         return limiteCredito;
     }
     
-    public  ContaBancaria(int idConta, String agencia, String numeroConta, String tipo) {
+    public void setLimiteCredito(double limiteCredito) {
+		this.limiteCredito = limiteCredito;
+	}
+
+
+	public  ContaBancaria(int idConta, String agencia, String numeroConta, String tipo, double limiteCredito)  {
         this.idConta = idConta;
         this.agencia = agencia;
         this.numeroConta = numeroConta;
         this.tipo = tipo;
+        this.limiteCredito =limiteCredito;
 
-
-        if (tipo.equals("E")) {
-            limiteCredito = 2000;
-
-        } else {
-            limiteCredito = 0;
-        }
     }
     
     public  ContaBancaria() {
