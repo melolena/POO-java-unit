@@ -7,7 +7,7 @@ public class Produto {
 	protected double precoVenda;
 	private double percLucro;
 	private double percIcms;
-	private int contador = 000;
+	private static int contador = 001;
 	
 	public String getDescricao() {
 		return descricao;
@@ -47,6 +47,7 @@ public class Produto {
 		this.precoCusto = precoCusto;
 		this.percLucro = percLucro;
 		this.percIcms = percIcms;
+		calculaPrecoVenda();
 	}
 	
 	

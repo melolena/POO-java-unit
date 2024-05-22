@@ -19,7 +19,9 @@ public class ProdutoIndustrializado extends Produto {
 	
 	@Override
 	public void calculaPrecoVenda() {
-		 precoVenda = (1+ getPercIcms()/100) * (1 +percIpi /100) * getPrecoCusto() * (1* getPercLucro());
+		 double custo = (getPrecoCusto() * (1+ getPercIcms()/100)) + (getPrecoCusto() * (1 + percIpi /100)) ;
+		 double lucro = ((1 + getPercLucro()/100) * (1+ getPercIcms()/100) * (1 + percIpi /100));
+		 precoVenda = custo + lucro;
 	}
 	
 	@Override
